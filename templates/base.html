@@ -1,0 +1,14 @@
+{% load cms_tags %}
+<head>
+    <title>{% page_attribute page_title %}</title>
+    <meta name="description" content="{% page_attribute meta_description %}"/>
+    <meta name="keywords" content="{% page_attribute meta_keywords %}"/>
+    ...
+    ...
+</head>
+<html>
+  <body>
+   {% placeholder base_content %}
+   {% block base_content%}{% endblock %}
+  </body>
+</html>
