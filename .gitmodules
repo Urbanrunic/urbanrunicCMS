@@ -1,0 +1,3 @@
+[submodule "media/galleria"]
+	path = media/galleria
+	url = https://github.com/aino/galleria.git
