@@ -1,0 +1,3 @@
+[submodule "urCMS/urbanrunic/CMS/media/galleria"]
+	path = urCMS/urbanrunic/CMS/media/galleria
+	url = https://github.com/aino/galleria.git
