@@ -123,6 +123,10 @@ CMS_TEMPLATES = (
     ('template_2.html', 'Template Two'),
 )
 
+CMS_LANGUAGES = (
+    ('en', gettext('English')),
+)
+
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.auth',
     'django.core.context_processors.i18n',
@@ -143,22 +147,24 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
 
-	# Third Party
+    # Third Party
     'cms',
     'mptt',
     'menus',
     'south',
     'appmedia',
     'imagekit',
+    'publisher',
 
-	'cms.plugins.text',
-	'cms.plugins.link',
-	'cms.plugins.file',
-	'cms.plugins.snippet',
-	'cms.plugins.googlemap',
-	'cms.plugins.twitter',
-	
-	# Local
+    'cms.plugins.text',
+    'cms.plugins.link',
+    'cms.plugins.file',
+    'cms.plugins.video',
+    'cms.plugins.snippet',
+    'cms.plugins.googlemap',
+    'cms.plugins.twitter',
+    
+    # Local
     'urbanrunicCMS.core',
     'urbanrunicCMS.blog',
 )
