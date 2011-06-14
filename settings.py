@@ -167,6 +167,7 @@ INSTALLED_APPS = (
     # Local
     'urbanrunicCMS.core',
     'urbanrunicCMS.blog',
+	'urbanrunicCMS.gallery',
 )
 
 # A sample logging configuration. The only tangible logging
