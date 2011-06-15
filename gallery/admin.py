@@ -1,18 +1,14 @@
 from django.contrib import admin
 
-from gallery.models import GalleryPhoto, CommercialPhoto, MusicPhoto
+from gallery.models import Gallery, Photo
 
 
-class GalleryPhotoAdmin(admin.ModelAdmin):
+class GalleryAdmin(admin.ModelAdmin):
     pass
 
-class CommercialPhotoAdmin(admin.ModelAdmin):
-    pass
-
-class MusicPhotoAdmin(admin.ModelAdmin):
+class PhotoAdmin(admin.ModelAdmin):
     pass
 
 
-admin.site.register(GalleryPhoto, GalleryPhotoAdmin)
-admin.site.register(CommercialPhoto, CommercialPhotoAdmin)
-admin.site.register(MusicPhoto, MusicPhotoAdmin)
+admin.site.register(Gallery)
+admin.site.register(Photo)
