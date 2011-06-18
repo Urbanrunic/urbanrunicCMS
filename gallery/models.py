@@ -9,7 +9,8 @@ class Gallery(ImageModel):
     published = models.BooleanField(default=True)
     pub_date = models.DateTimeField(default=datetime.datetime.now)
 
-    # add date field
+    class Meta:
+        ordering = ['-pub_date']
     
 
 class Photo(ImageModel):
@@ -22,7 +23,8 @@ class Photo(ImageModel):
     main_gallery = models.BooleanField(default=True)
     pub_date = models.DateTimeField(default=datetime.datetime.now)
 
-    #add date fields
+    class Meta:
+        ordering = ['-pub_date']
 
     class IKOptions:
         # This inner class is where we define the ImageKit options for the model
