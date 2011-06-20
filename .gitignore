@@ -5,6 +5,7 @@ $ cat .gitignore
 
 # Use wildcards as well
 
+local_settings.py
 *.swp
 *.pyc
 
