@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     url(r'^', include('cms.urls')),
-    url(r'^gallery/',  include('urbanrunicCMS.gallery.urls')),
+    url(r'^gallery/',  include('gallery.urls')),
 )
 
 if settings.DEBUG:
