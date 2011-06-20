@@ -1,16 +1,6 @@
 {% extends "base.html" %}
-{% for g in gallery %}
-<div id="gallery">
-	{% for p in photo %}
-  	<img src="{{ p.photo }}">
-	{% endfor %}
-</div>
-{% endfor %}
 
-  <script>
-    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-      $("#gallery").galleria({
-        width: 500,
-        height: 500
-      });
-  </script>
+
+{% for g in gallery %}
+
+{% endfor %}
