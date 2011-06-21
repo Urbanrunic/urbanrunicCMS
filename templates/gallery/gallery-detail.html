@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block base_content%}
+<div id="gallery">
+  {% for image in images %}
+    <img src="{{ image.display.url }}" alt="{{ image.title }}">
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block extra_js %}
+  <script>
+    Galleria.loadTheme('/media/galleria/src/themes/classic/galleria.classic.js');
+      $("#gallery").galleria({
+        width: 500,
+        height: 500
+      });
+  </script>
+{% endblock %}

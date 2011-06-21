@@ -4,7 +4,7 @@ from gallery.views import *
 
 
 urlpatterns = patterns('',
-    url(r'^(?P<slug>[-\w]+)/$',
+    url(r'^(?P<id>\d+)/$',
         view='gallery.views.gallery_detail',
         name='gallery_detail',
     ),

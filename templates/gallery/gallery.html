@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
-
+{% block base_content%}
 {% for g in gallery %}
-
+  <a href="{% url gallery_detail g.id %}">{{ g.name }}</a>
 {% endfor %}
+{% endblock %}
