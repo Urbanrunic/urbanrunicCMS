@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+THEME NAME: Tucker Joenz Photography/Blog
+THEME URI: http://www.tuckerjoenz.com
+DESCRIPTION: 
+VERSION: 1.0
+AUTHOR: <a href="http://www.urbanrunic.net">Urbanrunic</a>
+AUTHOR URI: http://www.urbanrunic.net
+*/
+
+
+@font-face {
+    font-family: 'EuphemiaUCASRegular';
+    src: url('/media/fonts/euphemiacasregular-webfont.eot');
+    src: url('/media/fonts/euphemiacasregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/media/fonts/euphemiacasregular-webfont.woff') format('woff'),
+         url('/media/fonts/euphemiacasregular-webfont.ttf') format('truetype'),
+         url('/media/fonts/euphemiacasregular-webfont.svg#EuphemiaUCASRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	color: #000000;
+  	font-family: 'EuphemiaUCASRegular', Georgia, serif;
+  	font-size: 10pt;
+  	letter-spacing: 0.1em;
+  	line-height: 19px;
+  	padding: 0;
+  	position: relative;
+  	background: #acacac url(/media/images/TJMock.jpg) repeat;
+}
+
+#header {
+	position: fixed; 
+	padding: 10px 0px; 
+	top:0; 
+	left:0; 
+	width:100%; 
+	background: #FFF; 
+	height: 90px; 
+	clear:both; 
+	color:#000; 
+	text-align:center; 
+	font-weight:normal; 
+	font-size:12px; 
+	line-height:2.2em; 
+	text-transform:italic; 
+	line-height: 2em;
+	box-shadow: 3px 3px 4px #000; 
+	-webkit-box-shadow: 3px 3px 4px #000; 
+	-moz-box-shadow: 3px 3px 4px #000; 
+	behavior: url(../pie/PIE.htc);
+}
+
+#headerContent {
+	width: 950px;
+	margin: 20px auto;
+}
+
+#navigation {
+	float: right;
+	margin-right: 50px;
+	display: block;
+	font-weight: bold;
+}
+
+#navigation li {
+	display: inline;
+}
+ 
+#wrapper {
+	position: relative;
+	width: 950px;
+	margin: auto;
+	margin-top: 125px;
+}
+
+#column1 {
+	width: 550px;
+	margin: auto;
+	padding: 20px;
+}
+
+#logo {
+	float: left;
+	margin-left: 50px;
+}

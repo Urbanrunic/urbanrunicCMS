@@ -3,14 +3,33 @@
     <title>{% page_attribute page_title %}</title>
     <meta name="description" content="{% page_attribute meta_description %}"/>
     <meta name="keywords" content="{% page_attribute meta_keywords %}"/>
+    <link rel='stylesheet' href='/media/css/style.css' type='text/css' />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="/media/js/galleria-1.2.4.min.js"></script>
 </head>
 <html>
   <body>
-   {% placeholder base_content %}
-   {% block base_content%}
-   {% endblock %}
+    <div id="header">
+      <div id="headerContent">
+        <div id="logo">
+          <img src="/media/images/TJLogo.png" alt="Tucker Joenz Photography">
+        </div>
+        <div id="navigation">
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Prices</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="column1">
+        {% placeholder base_content %}
+          {% block base_content%}
+        {% endblock %}
+      </div>
+    </div>
   </body>
    {% block extra_js %}
    {% endblock %}

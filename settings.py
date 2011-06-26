@@ -119,6 +119,7 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
+    ('base.html', gettext('base')),
     ('template_1.html', 'Template One'),
     ('template_2.html', 'Template Two'),
 )
