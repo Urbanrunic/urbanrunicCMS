@@ -24,46 +24,45 @@ AUTHOR URI: http://www.urbanrunic.net
 }
 
 body {
-	color: #000000;
+	color: #FFF;
   	font-family: 'EuphemiaUCASRegular', Georgia, serif;
   	font-size: 10pt;
   	letter-spacing: 0.1em;
   	line-height: 19px;
   	padding: 0;
   	position: relative;
-  	background: #acacac url(/media/images/TJMock.jpg) repeat;
+  	background: #acacac url(/media/images/TJBack.jpg) repeat;
 }
 
 #header {
-	position: fixed; 
+	position: relative; 
 	padding: 10px 0px; 
 	top:0; 
 	left:0; 
 	width:100%; 
-	background: #FFF; 
+	background: transparent; 
 	height: 90px; 
 	clear:both; 
-	color:#000; 
+	color:#FFF; 
 	text-align:center; 
 	font-weight:normal; 
 	font-size:12px; 
 	line-height:2.2em; 
 	text-transform:italic; 
 	line-height: 2em;
-	box-shadow: 3px 3px 4px #000; 
-	-webkit-box-shadow: 3px 3px 4px #000; 
-	-moz-box-shadow: 3px 3px 4px #000; 
-	behavior: url(../pie/PIE.htc);
+	z-index: 998;
 }
 
 #headerContent {
-	width: 950px;
+	width: 1000px;
+	height: 90px;
 	margin: 20px auto;
+	border-bottom: 1px solid #c1c1c1;
 }
 
 #navigation {
 	float: right;
-	margin-right: 50px;
+	margin: auto 0 auto 0;
 	display: block;
 	font-weight: bold;
 }
@@ -71,12 +70,17 @@ body {
 #navigation li {
 	display: inline;
 }
+
+#navigation li a {
+	color: #FFF;
+	text-decoration: none;
+}
  
 #wrapper {
 	position: relative;
 	width: 950px;
 	margin: auto;
-	margin-top: 125px;
+	margin-top: 20px;
 }
 
 #column1 {
@@ -85,7 +89,62 @@ body {
 	padding: 20px;
 }
 
+#footer { 
+	position: fixed; 
+	padding: 10px 0px; 
+	bottom:0; 
+	left:0; 
+	width:100%; 
+	background: #000; 
+	height: 70px; 
+	clear:both; 
+	color:#fff; 
+	text-align:center; 
+	font-weight:normal; 
+	font-size:12px; 
+	line-height:2.2em; 
+	line-height: 2em;
+	z-index: 999;
+}
+
+#footerContent {
+	width: 1000px;
+	margin: auto;
+}
+
+#credits {
+	margin-top: 20px;
+	float: left;
+}
+
+#social {
+	float: right;
+	text-align: right;
+}
+
+#social-links {
+	list-style-type: none;
+	display: block;
+}
+
+#social-links li {
+	display: inline;
+}
+
 #logo {
 	float: left;
-	margin-left: 50px;
+	margin: auto 0 auto 0;
 }
+
+#galleryWrapper {
+	background: url(/media/images/galleryBG.png) no-repeat;
+	width: 825px;
+	height: 520px;
+}
+
+#gallery {
+}
+
+.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+.clear {clear:both;}

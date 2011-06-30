@@ -2,19 +2,21 @@
 
 
 {% block base_content%}
-<div id="gallery">
-  {% for image in images %}
-    <img src="{{ image.display.url }}" alt="{{ image.title }}">
-  {% endfor %}
+<div id="galleryWrapper">
+  <div id="gallery">
+    {% for image in images %}
+      <img src="{{ image.display.url }}" alt="{{ image.title }}">
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}
 
 {% block extra_js %}
   <script>
-    Galleria.loadTheme('/media/galleria/src/themes/classic/galleria.classic.js');
+    Galleria.loadTheme('/media/galleria/src/themes/twelve/galleria.twelve.min.js');
       $("#gallery").galleria({
-        width: 500,
-        height: 500
+        width: 750,
+        height: 450
       });
   </script>
 {% endblock %}
