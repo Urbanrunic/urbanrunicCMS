@@ -23,9 +23,21 @@ AUTHOR URI: http://www.urbanrunic.net
 
 }
 
+@font-face {
+    font-family: 'PlantagenetCherokeeRegular';
+    src: url('/media/fonts/plantagenetcherokee-webfont.eot');
+    src: url('/media/fonts/plantagenetcherokee-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/media/fonts/plantagenetcherokee-webfont.woff') format('woff'),
+         url('/media/fonts/plantagenetcherokee-webfont.ttf') format('truetype'),
+         url('/media/fonts/plantagenetcherokee-webfont.svg#PlantagenetCherokeeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
 	color: #FFF;
-  	font-family: 'EuphemiaUCASRegular', Georgia, serif;
+  	font-family: 'PlantagenetCherokeeRegular', Georgia, serif;
   	font-size: 10pt;
   	letter-spacing: 0.1em;
   	line-height: 19px;
@@ -133,7 +145,15 @@ body {
 
 #logo {
 	float: left;
-	margin: auto 0 auto 0;
+}
+
+.and {
+	font-size: large;
+}
+
+#title {
+	margin-left: 20px;
+	float:left;
 }
 
 #galleryWrapper {
@@ -143,6 +163,7 @@ body {
 }
 
 #gallery {
+	margin: 0 auto 0 auto;
 }
 
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
