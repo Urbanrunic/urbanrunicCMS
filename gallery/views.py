@@ -12,7 +12,7 @@ def gallery(request):
     return render_to_response('gallery/gallery.html', context)
 
 def gallery_detail(request, id):
-	galleries = Gallery.objects.all()
+    galleries = Gallery.objects.all()
     gallery = get_object_or_404(Gallery, pk=id)
     images = Photo.objects.filter(gallery=gallery)
     context = RequestContext(request, {'images': images, 'galleries': galleries})

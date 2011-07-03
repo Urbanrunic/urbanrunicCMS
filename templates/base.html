@@ -1,4 +1,5 @@
 {% load cms_tags %}
+{% load cache menu_tags %}
 <head>
     <title>{% page_attribute page_title %}</title>
     <meta name="description" content="{% page_attribute meta_description %}"/>
@@ -19,9 +20,8 @@
         </div>
         <div id="navigation">
           <ul>
-            <li><a href="#">Blog</a></li>
+            <li>{% show_menu 0 100 100 100 %}</li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Prices</a></li>
           </ul>
         </div>
         <div class="clearfix"></div>

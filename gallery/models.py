@@ -12,6 +12,10 @@ class Gallery(models.Model):
     published = models.BooleanField(default=True)
     pub_date = models.DateTimeField(default=datetime.datetime.now)
 
+    def main_image(self):
+        image = Photo.objects.get(gallery=self, main_gallery=True)
+        return image
+
     class Meta:
         ordering = ['-pub_date']
     

@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block base_content%}
-{% for g in galleries %}
-  <a href="{% url gallery_detail g.id %}">{{ g.name }}</a>
-{% endfor %}
+<div id="gallery-thumbs">
+    {% for g in galleries %}
+        <a href="{% url gallery_detail g.id %}"><img src="{{ g.main_image.medium_image.url }}"></a>
+    {% endfor %}
+</div>
 {% endblock %}
