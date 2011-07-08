@@ -155,6 +155,8 @@ INSTALLED_APPS = (
     'appmedia',
     'imagekit',
     'publisher',
+    'hellonewman.blog',
+    'hellonewman.core',
 
     'cms.plugins.text',
     'cms.plugins.link',
