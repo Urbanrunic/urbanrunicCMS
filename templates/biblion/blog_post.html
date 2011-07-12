@@ -1,5 +1,6 @@
 {% extends "two-column.html" %}
 {% load biblion_tags %}
+{% load disqus_tags %}
 
 {% block title %}{{ post.title }}{% endblock %}
 
@@ -11,6 +12,11 @@
 <hr>
 <h2><a href="/posts/{{ post.published|date:"Y/m/d"}}/{{ post.slug }}">{{ post.title }}</a></h2>
 {{ post.content_html|safe }}
+<section class="entry-disqus">
+    <h2>Comments</h2>
+    <a name="disqus_thread"></a>
+    {% disqus_show_comments %}
+</section>
 
 
 {% endblock %}

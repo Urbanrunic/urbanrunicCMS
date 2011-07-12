@@ -164,6 +164,7 @@ INSTALLED_APPS = (
     'imagekit',
     'publisher',
     'biblion',
+    'disqus',
 
     'cms.plugins.text',
     'cms.plugins.link',
@@ -201,6 +202,9 @@ LOGGING = {
         },
     }
 }
+
+DISQUS_API_KEY = '1gDpHiNjEXPERsawK5LG7FO3WxGRNpiQNYSMO7slaYyzj7tBsiEd6jKcs0ZRIr0m'
+DISQUS_WEBSITE_SHORTNAME = 'tuckerjoenz'
 
 
 # Use local_settings.py for things to override privately
