@@ -118,6 +118,14 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_PATH, "templates")
 )
 
+BIBLION_PARSER = None
+
+# set the "display name" for all (ie. untagged entries) 
+BIBLION_ALL_SECTION_NAME = "Untagged" 
+
+# add new sections as tuples ('slug', 'displayname') 
+BIBLION_SECTIONS = [('tutorials', 'Tutorials'), ('news', 'News')]
+
 CMS_TEMPLATES = (
     ('base.html', gettext('base')),
     ('two-column.html', 'Two Column'),
@@ -155,8 +163,7 @@ INSTALLED_APPS = (
     'appmedia',
     'imagekit',
     'publisher',
-    'hellonewman.blog',
-    'hellonewman.core',
+    'biblion',
 
     'cms.plugins.text',
     'cms.plugins.link',

@@ -1,0 +1,16 @@
+{% extends "two-column.html" %}
+{% load biblion_tags %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+{% blog_sections as blog_sections %}
+{% for s,n in blog_sections %}
+<a href="{% url blog_section s %}">{{ n }}</a>{% if not forloop.last %}|{% endif %}
+{% endfor %}
+<hr>
+<h2><a href="/posts/{{ post.published|date:"Y/m/d"}}/{{ post.slug }}">{{ post.title }}</a></h2>
+{{ post.content_html|safe }}
+
+
+{% endblock %}

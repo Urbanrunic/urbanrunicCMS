@@ -81,6 +81,7 @@ body {
 
 #navigation li {
 	display: inline;
+	margin-left: 10px;
 }
 
 #navigation li a {
@@ -109,6 +110,15 @@ body {
 #column-two {
 	float: left;
 	width: 350px;
+}
+
+#blog {
+	color: #FFF;
+}
+
+#blog a {
+	color: #c1c1c1;
+	text-decoration: none;
 }
 
 #footer { 
@@ -228,6 +238,7 @@ body {
 	-moz-border-radius: 8px;
 	-moz-border-radius: 8px;
 }
+
 
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix, .container {display:block;}

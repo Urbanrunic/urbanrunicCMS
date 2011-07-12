@@ -4,6 +4,12 @@
 {% block base_content %}
 <div id="column-one">
   {% placeholder two_column_content %}
+  {% block title %}
+  {% endblock %}
+  <div id="blog">
+  {% block content %}
+  {% endblock %}
+  </div>
 </div>
 <div id="column-two">
     Here is some other content
