@@ -109,7 +109,7 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.media.PlaceholderMediaMiddleware',
 )
 
-ROOT_URLCONF = 'urbanrunicCMS.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -175,9 +175,9 @@ INSTALLED_APPS = (
     'cms.plugins.twitter',
     
     # Local
-    'urbanrunicCMS.core',
-    'urbanrunicCMS.blog',
-    'urbanrunicCMS.gallery',
+    'core',
+    'blog',
+    'gallery',
 )
 
 # A sample logging configuration. The only tangible logging
