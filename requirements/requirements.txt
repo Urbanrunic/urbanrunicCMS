@@ -17,8 +17,6 @@ Gunicorn==0.12.2
 -e git+git://github.com/issackelly/biblion.git#egg=biblion
 -e git+git://github.com/robhudson/django-debug-toolbar.git#egg=django-debug-toolbar
 -e git+git://github.com/dziegler/django-css.git#egg=django-css
--e svn+http://django-command-extensions.googlecode.com/svn/trunk/#egg=django-extensions
 -e git+git://github.com/ericflo/django-oembed.git#egg=django-oembed
--e svn+http://django-syncr.googlecode.com/svn/trunk/#egg=django-syncr
 -e git+git://github.com/gregnewman/django-grappelli.git#egg=django-grappelli
 -e git+git://github.com/arthurk/django-disqus.git#egg=disqus
