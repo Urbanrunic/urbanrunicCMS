@@ -11,6 +11,7 @@ creole==1.2
 Pygments==1.2.2
 Fabric==1.2.0
 Gunicorn==0.12.2
+Psycopg==1.1.21
 
 
 # editable checkouts
