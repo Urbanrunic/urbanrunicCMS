@@ -165,6 +165,7 @@ INSTALLED_APPS = (
     'publisher',
     'biblion',
     'disqus',
+    'psycopg',
 
     'cms.plugins.text',
     'cms.plugins.link',
