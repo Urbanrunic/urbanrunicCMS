@@ -105,6 +105,7 @@ body {
 #column-one {
 	float: left;
 	width: 600px;
+	margin-bottom: 150px;
 }
 
 #column-two {
@@ -214,6 +215,7 @@ body {
 
 #gallery-col2 {
 	float: right;
+	margin-bottom: 85px;
 }
 
 #gallery {
