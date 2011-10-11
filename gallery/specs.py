@@ -15,7 +15,7 @@ class ResizeMedium(processors.Resize):
 
 # now we define a display size resize processor
 class ResizeDisplay(processors.Resize):
-    width = 600
+    width = 1000
 
 # now let's create an adjustment processor to enhance the image at small sizes
 class EnchanceThumb(processors.Adjustment):
