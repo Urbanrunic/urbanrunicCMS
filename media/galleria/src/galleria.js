@@ -1919,12 +1919,12 @@ Galleria.prototype = {
             thumbEventType: 'click',
             thumbFit: true,
             thumbMargin: 0,
-            thumbQuality: 'auto',
+            thumbQuality: true,
             thumbnails: true,
             transition: 'fade',
             transitionInitial: undef,
             transitionSpeed: 400,
-            useCanvas: false, // 1.2.4
+            useCanvas: true, // 1.2.4
             width: 'auto'
         };
 
