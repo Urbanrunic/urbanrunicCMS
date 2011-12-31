@@ -1891,7 +1891,7 @@ Galleria.prototype = {
             height: 'auto',
             idleTime: 3000,
             idleSpeed: 200,
-            imageCrop: 'height',
+            imageCrop: false,
             imageMargin: 0,
             imagePan: false,
             imagePanSmoothness: 12,
