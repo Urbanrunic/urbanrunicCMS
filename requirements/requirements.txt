@@ -12,6 +12,7 @@ Pygments==1.2.2
 Fabric==1.2.0
 Gunicorn==0.12.2
 psycopg2==2.4.2
+biblion==0.1.0
 
 
 # editable checkouts
