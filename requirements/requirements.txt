@@ -16,7 +16,7 @@ biblion==0.1.0
 
 
 # editable checkouts
--e git+git://github.com/issackelly/biblion.git#egg=biblion
+# -e git+git://github.com/issackelly/biblion.git#egg=biblion
 -e git+git://github.com/robhudson/django-debug-toolbar.git#egg=django-debug-toolbar
 -e git+git://github.com/dziegler/django-css.git#egg=django-css
 -e git+git://github.com/ericflo/django-oembed.git#egg=django-oembed
