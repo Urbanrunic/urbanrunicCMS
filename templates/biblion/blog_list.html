@@ -11,7 +11,7 @@
 
 {% for post in posts %}
 <h2><a href="{% url blog_post post.published|date:"Y" post.published|date:"m" post.published|date:"d" post.slug %}">{{ post.title }}</a></h2>
-{{ post.teaser_html }}
+{{ post.teaser_html|safe }}
 <a href="{% url blog_post post.published|date:"Y" post.published|date:"m" post.published|date:"d" post.slug %}">Read more ...</a>
 {% endfor %}
 
