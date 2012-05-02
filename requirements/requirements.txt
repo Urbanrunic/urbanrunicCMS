@@ -1,6 +1,7 @@
 # get python libs
 #-r libs.txt
 
+Typogrify==1.0
 Django==1.3
 Django-CMS==2.1.3
 Django-imagekit==0.3.6

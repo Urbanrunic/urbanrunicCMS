@@ -169,6 +169,7 @@ INSTALLED_APPS = (
     'publisher',
     'biblion',
     'disqus',
+	'typogrify',
 
     'cms.plugins.text',
     'cms.plugins.link',
