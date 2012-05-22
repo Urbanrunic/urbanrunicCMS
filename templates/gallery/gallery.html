@@ -3,7 +3,10 @@
 {% block base_content%}
 <div id="gallery-thumbs">
     {% for g in galleries %}
+			<div class="thumbnail">
         <a href="{% url gallery_detail g.id %}"><img src="{{ g.main_image.medium_image.url }}"></a>
+				<div class="gallery-name">{{ g.name }}</div>
+			</div>
     {% endfor %}
 </div>
 {% endblock %}

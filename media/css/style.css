@@ -46,6 +46,11 @@ body {
   	background: #acacac url(/media/images/TJBack.jpg) repeat;
 }
 
+a {
+	color: #c1c1c1;
+	text-decoration: none;
+}
+
 #header {
 	position: relative; 
 	padding: 10px 0px; 
@@ -123,7 +128,7 @@ body {
 }
 
 #footer { 
-	position: fixed; 
+	position: fixed;
 	padding: 10px 0px; 
 	bottom:0; 
 	left:0; 
@@ -226,21 +231,40 @@ body {
 }
 
 #gallery-thumbs {
-	float: left;
 	margin: 0 auto 0 auto;
 }
 
-#gallery-thumbs img {
+.thumbnail {
+	float: left;
 	margin: 5px;
-	border: 2px solid #FFF;
-	border-radius: 8px;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-moz-border-radius: 8px;
+	overflow: hidden;
 }
 
+#gallery-thumbs img {
+	border: 2px solid #FFF;
+	border-radius: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.gallery-name {
+	margin: 0 2px;
+	background: #000;
+	padding: 0 10px;
+	margin-top: -37px;
+	line-height: 2.8em;
+	opacity: 0.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"; /* IE 8 hack */
+	filter: alpha(opacity = 75); /* IE 5-7 hack */
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
 
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix, .container {display:block;}
