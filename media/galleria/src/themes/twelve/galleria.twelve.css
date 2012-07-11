@@ -20,6 +20,8 @@
     overflow: hidden;
     background: #000;
     position: absolute;
+    width: 750px;
+    height: 420px;
     top: 0;
     left: 0;
     right: 0;
