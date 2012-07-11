@@ -252,6 +252,7 @@ a {
 #gallery {
 	background: url(/media/images/galleryshadow.png) no-repeat bottom right;
 	width: 750px;
+	height: 480px;
 	margin-top: -20px;
 	padding: 0 5px 30px 0;
 }

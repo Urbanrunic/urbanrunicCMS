@@ -6,6 +6,8 @@
 .galleria-container {
     position: relative;
     overflow: hidden;
+    width: 750px;
+    height: 450px;
     font: 11px/1.4 arial,sans-serif;
     color: #fff;
 }
