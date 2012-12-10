@@ -83,7 +83,7 @@ a {
 	left:0; 
 	width:100%; 
 	background: transparent; 
-	height: 90px; 
+	height: 146px; 
 	clear:both; 
 	color:#FFF; 
 	text-align:center; 
@@ -97,14 +97,14 @@ a {
 
 #headerContent {
 	width: 1000px;
-	height: 60px;
+	height: 72px;
 	margin: 20px auto;
 	border-bottom: 1px solid #c1c1c1;
 }
 
 #navigation {
 	float: right;
-	margin: auto 0 auto 0;
+	margin: 49px 0 0 0;
 	display: block;
 	font-weight: bold;
 }
@@ -204,7 +204,7 @@ a {
 }
 
 #title {
-	margin: 10px 0 0 20px;
+	margin: 47px 0 0 0px;
 	float:left;
 }
 
